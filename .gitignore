@@ -56,6 +56,9 @@ bower_components
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
+# postgres
+config/
+
 # Dependency directories
 node_modules/
 jspm_packages/

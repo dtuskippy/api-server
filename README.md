@@ -8,6 +8,7 @@
     * Middleware testing
     * CI/CD with Github and Heroku (incl. Postgres sync)
     * Created 2 SQL data models using the Sequelize libary and Postgres database
+    * Model Interface which consumes a Sequelize Model and performs generic Database CRUD operations
 
 ### Setup
 
@@ -15,7 +16,7 @@
 
 ### Deployed server
 
-    * Heroku: [chelko-basic-api-server-prod](https://dashboard.heroku.com/apps/chelko-basic-api-server-prod/)
+    * Heroku: [chelko-basic-api-server-prod](https://dashboard.heroku.com/apps/chelko-api-server-prod/)
 
 ### Running the app
 
@@ -40,6 +41,6 @@
     * npm test
 
 
-### UML: Basic API Server -- Lab 03 UML
+### UML: Basic API Server -- Lab 04 UML
 
-![UML - Lab 03](images/basic-api-server.png)
+![UML - Lab 04](images/api-server.png)

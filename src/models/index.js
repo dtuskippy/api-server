@@ -4,6 +4,7 @@ require('dotenv').config();
 const { Sequelize, DataTypes } = require('sequelize');
 const drinksSchema = require('./drinks.schema');
 const meatSchema = require('./meat.schema');
+const ModelInterface = require('./modelInterface');
 
 // 'postgres://localhost:5432/api-app'
 // 'postgres://username:password@localhost:5432/api-app'
@@ -30,7 +31,10 @@ const sequelizeDatabase = new Sequelize(DATABASE_URL, {
 const DrinksModel = drinksSchema(sequelizeDatabase, DataTypes);
 const MeatModel = meatSchema(sequelizeDatabase, DataTypes);
 
-module.exports = {sequelizeDatabase, DrinksModel, MeatModel};
+module.exports = {sequelizeDatabase,
+  drinksInterface: new ModelInterface(DrinksModel),
+  meatInterface: new ModelInterface(MeatModel),
+};
 
 
 
